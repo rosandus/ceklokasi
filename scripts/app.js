@@ -2,7 +2,7 @@ window.onload = function() {
 
     // GPS
     var x = document.getElementById("locationstatus");
-    document.getElementById('gpsstatus').innerHTML = navigator.geolocation ? 'Yes' : 'No';
+    x.innerHTML = "wkwk";
     if (navigator.geolocation) {
         navigator.permissions.query({name: 'geolocation'}).then(function (permissionStatus) {
             x.innerHTML = permissionStatus.state;
